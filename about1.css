@@ -1,0 +1,309 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #dedede !important;
+}
+
+.header nav {
+    display: none;
+}
+
+.header {
+    /* width: 100%; */
+    height: 70vh;
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%);
+    /* border: 1px solid black; */
+}
+
+.logo-navbar img {
+    width: 200px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.search-icon a {
+    text-decoration: none;
+    color: black;
+}
+
+.search-icon a:hover {
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+}
+
+.segmen-title {
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: 20%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.about-description {
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.about-description-text {
+    /* border: 1px solid black; */
+    width: 40%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.3rem;
+}
+
+.about-description-images {
+    border: 1px solid black;
+    width: 30%;
+    height: 80vh;
+}
+
+.founder-quotes {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.founder-quotes .container {
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.founder-quotes i {
+    font-size: 3rem;
+}
+
+.founder-space-images {
+    width: 110px;
+    height: 110px;
+    border: 2px solid black;
+    border-radius: 100%;
+}
+
+.founder-space-text ul {
+    padding: 0;
+}
+
+.founder-space-text ul li {
+    list-style-type: none;
+}
+
+.footer {
+    width: 100%;
+    background-color: #d6d6d6;
+    position: absolute;
+    bottom: auto;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 0.8rem;
+}
+
+.footer .container p {
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+/* @media Start */
+
+/* Media  max-width: 991px and min-width: 824px Start */
+@media (max-width: 991px) and (min-width: 824px) {}
+
+/* Media  max-width: 991px and min-width: 824px End */
+
+/* Media  max-width: 823px and min-width: 568px Start */
+@media (max-width: 823px) and (min-width: 568px) {}
+
+/* Media  max-width: 823px and min-width: 568px End */
+
+/* Media  max-width: 567px and min-width: 52px Start */
+@media (max-width: 567px) and (min-width: 52px) {}
+
+/* Media  max-width: 567px and min-width: 52px End */
+
+@media (max-width: 991px) and (min-width: 52px) {
+    .header .container {
+        display: none;
+    }
+
+    .header nav {
+        display: block;
+    }
+
+    #menuToggle {
+        display: block;
+        position: relative;
+        top: 10px;
+        left: 10px;
+
+        z-index: 1;
+
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+
+        cursor: pointer;
+
+        opacity: 0;
+        /* hide this */
+        z-index: 2;
+        /* and place it over the hamburger */
+
+        -webkit-touch-callout: none;
+    }
+
+    /*
+    * Just a quick hamburger
+    */
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+
+        background: #cdcdcd;
+        border-radius: 3px;
+
+        z-index: 1;
+
+        transform-origin: 4px 0px;
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    /* 
+    * Transform all the slices of hamburger
+    * into a crossmark.
+    */
+    #menuToggle input:checked~span {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+    * But let's hide the middle one.
+    */
+    #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 1;
+        transform: rotate(0deg) translate(-2px, -1px);
+        background: #232323;
+    }
+
+    /*
+    * Ohyeah and the last one should go the other direction
+    */
+    #menuToggle input:checked~span:nth-last-child(2) {
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+    * Make this absolute positioned
+    * at the top left of the screen
+    */
+    #menu {
+        position: absolute;
+        width: 300px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 100px;
+
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    #menu li {
+        padding: 5px 0;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: #ffff;
+    }
+
+    #menu a li img {
+        width: 200px !important;
+    }
+
+    /*
+    * And let's slide it in from the left
+    */
+    #menuToggle input:checked~ul {
+        transform: none;
+    }
+}
+
+/* @Media End */

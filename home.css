@@ -1,0 +1,486 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #dedede !important;
+}
+
+/* Header Start */
+.header nav {
+    display: none;
+}
+
+.header {
+    /* width: 100%; */
+    height: 70vh;
+    background-color: black;
+    position: relative;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.logo-navbar img {
+    width: 200px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    /* border: 1px solid white; */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    color: #ffff;
+}
+
+.search-icon a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.search-icon a:hover {
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+}
+
+/* Header End */
+
+/* Department Intro Start */
+.department-intro-container {
+    width: 100%;
+}
+
+.department-intro {
+    /* height: 98vh; */
+    background-color: #D6D6D6;
+    border: 0;
+    border-radius: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.department-intro-container .container {
+    padding-right: 0;
+}
+
+.dept-intro-pict {
+    width: 50%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.dept-intro-list {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    /* border: 1px solid black; */
+}
+
+.p-title {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.p-sub-title {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.dept-intro-list i {
+    padding-bottom: 0;
+}
+
+.list-desc {
+    font-family: 'Gothic A1', sans-serif;
+    /* font-weight: 1px; */
+    margin-bottom: 45px;
+    margin-left: 15px;
+    width: 100%;
+}
+
+/* Department Intro End */
+
+/* Partner Testimoni Start */
+.partner-testimoni-container {
+    width: 100%;
+    background-color: #d6d6d6;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.partner-testimoni {
+    background-color: #d6d6d6;
+}
+
+.carousel {
+    margin: auto;
+}
+
+.item-container {
+    /* width: 1000px; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.testi-title {
+    border: 0;
+    text-align: center;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding-top: 30px;
+}
+
+.testimoni-slider-item1 {
+    width: 200px;
+    text-align: center;
+}
+
+.testimoni-partner ul {
+    padding-left: 0;
+}
+
+.testimoni-partner ul li {
+    list-style-type: none;
+}
+
+.testimoni-pict {
+    height: 60px;
+    width: 60px;
+    border: 2px solid black;
+    border-radius: 100%;
+    transform: translate(-50%);
+    margin-left: 50%;
+    margin-bottom: 10px;
+}
+
+.partner-company {
+    font-size: 0.8rem;
+    color: #940D12;
+}
+
+/* Partner Testimoni End */
+
+/* Explore Student Start */
+.explore-student-direction-container {
+    width: 100%;
+}
+
+.explore-student-direction {
+    padding: 70px;
+    text-align: center;
+}
+
+.explore-student-direction p {
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+.btn-student-direction {
+    padding: 10px;
+    width: 100px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+
+/* Explore Student End */
+
+/* Footer Start */
+.footer-container {
+    width: 100%;
+    background-color: #d6d6d6;
+}
+
+.footer {
+    width: 100%;
+    background-color: #d6d6d6;
+    position: absolute;
+    bottom: auto;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 0.8rem;
+}
+
+.footer p {
+    margin: auto;
+}
+
+/* Footer End */
+
+/* @media Start */
+
+/* Media  max-width: 823px and min-width: 568px Start */
+@media (max-width: 823px) and (min-width: 568px) {
+    .department-intro {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .dept-intro-pict {
+        /* order: 1; */
+        width: 50%;
+        /* height: 50vh; */
+        border: 1px solid black;
+    }
+
+    .dept-intro-list {
+        /* order: 2; */
+        width: 50%;
+        /* max-height: 50%; */
+        /* border: 1px solid black; */
+    }
+
+    .p-title {
+        font-size: 1.2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .p-sub-title {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+}
+
+/* Media  max-width: 823px and min-width: 568px End */
+
+/* Media  max-width: 567px and min-width: 52px Start */
+@media (max-width: 567px) and (min-width: 52px) {
+    .carousel {
+        margin: 0;
+    }
+
+    .department-intro {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .dept-intro-pict {
+        /* order: 1; */
+        width: 100%;
+        height: 50vh;
+        border: 1px solid black;
+    }
+
+    .dept-intro-list {
+        /* order: 2; */
+        width: 100%;
+        max-height: 50%;
+        /* border: 1px solid black; */
+    }
+
+    .p-title {
+        font-size: 1.2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .p-sub-title {
+        font-size: 0.8rem;
+        margin: 0;
+    }
+}
+
+/* Media  max-width: 567px and min-width: 52px End */
+
+@media (max-width: 991px) and (min-width: 52px) {
+    .header .container {
+        display: none;
+    }
+
+    .header nav {
+        display: block;
+    }
+
+    #menuToggle {
+        display: block;
+        position: relative;
+        top: 10px;
+        left: 10px;
+
+        z-index: 1;
+
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+
+        cursor: pointer;
+
+        opacity: 0;
+        /* hide this */
+        z-index: 2;
+        /* and place it over the hamburger */
+
+        -webkit-touch-callout: none;
+    }
+
+    /*
+    * Just a quick hamburger
+    */
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+
+        background: #cdcdcd;
+        border-radius: 3px;
+
+        z-index: 1;
+
+        transform-origin: 4px 0px;
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+            opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    /* 
+    * Transform all the slices of hamburger
+    * into a crossmark.
+    */
+    #menuToggle input:checked~span {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+    * But let's hide the middle one.
+    */
+    #menuToggle input:checked~span:nth-last-child(3) {
+        opacity: 1;
+        transform: rotate(0deg) translate(-2px, -1px);
+        background: #232323;
+    }
+
+    /*
+    * Ohyeah and the last one should go the other direction
+    */
+    #menuToggle input:checked~span:nth-last-child(2) {
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    /*
+    * Make this absolute positioned
+    * at the top left of the screen
+    */
+    #menu {
+        position: absolute;
+        width: 300px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 100px;
+
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+
+        transform-origin: 0% 0%;
+        transform: translate(-100%, 0);
+
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
+
+    #menu li {
+        padding: 5px 0;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #menu a {
+        text-decoration: none;
+        color: #ffff;
+    }
+
+    #menu a li img {
+        width: 200px !important;
+    }
+
+    /*
+    * And let's slide it in from the left
+    */
+    #menuToggle input:checked~ul {
+        transform: none;
+    }
+
+    .list-desc {
+        /* height: 50px; */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 5px;
+    }
+
+    .list-desc:hover {
+        overflow: visible;
+        white-space: normal;
+        text-overflow: unset;
+    }
+
+    .second-item {
+        display: none;
+    }
+
+    .third-item {
+        display: none;
+    }
+
+    .testimoni-words {
+        font-size: 1rem;
+    }
+}
+
+/* @Media End */
